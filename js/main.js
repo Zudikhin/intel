@@ -50,4 +50,13 @@ $(document).ready(function () {
 	});
 
 
+	$(".single_glass_block_right_nav_item").click(function() {
+		var id = $(this).attr("data-target");
+		$(".single_glass_block_right_nav_item").removeClass("active");
+		$(this).addClass("active");
+		$(".single_glass_block_right_content_item").removeClass("active");
+		$(`#${id}`).addClass("active");
+	});
+
+
 });
